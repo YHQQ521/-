@@ -1,0 +1,33 @@
+<!--pages/register/register.wxml-->
+<import src="../template/template.wxml" />
+<!--头部-->
+<template is="module-header" data="{{...headerData}}"></template>
+<!--表单提交-->
+<form bindsubmit="formsubmit" bindreset="formreset">
+    <view class="inputWrap">
+        <input name="input" type="text" placeholder="手机号" />
+    </view>
+    <view class="wrap">
+        <view class="inputWrapNew">
+            <input name="input" type="text" password placeholder="验证码" />
+        </view>
+     <button class="yzm" type="primary">发送验证码</button>   
+    </view>
+    <view class="inputWrap">
+        <input name="input" type="text" password placeholder="密码" />
+    </view>
+    <view class="inputWrap">
+        <input name="input" type="text" password placeholder="确认密码" />
+    </view>
+    <view class="provision" bindtap="selectedClick">
+        <label>
+            <icon class="fxk" type="{{selected}}" size="18"></icon>
+                 <text>我已阅读并同意</text>
+                 <navigator class="navigator" url="../protocol/protocol">
+                    <text class="clause">                                             《云领将来用户注册协议》
+                    </text>
+                 </navigator>
+        </label>
+    </view>
+    <button class="login" form-type="submit" type="primary">注册</button>
+</form>

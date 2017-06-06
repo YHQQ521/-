@@ -1,0 +1,48 @@
+/* pages/login/login.wxss */
+@import "../template/template.wxss";
+.center{
+    margin-left: 80rpx;
+}
+.title{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 160rpx;
+}
+.inputWrap{
+    margin:30rpx 100rpx;
+    background: #fff;
+    padding: 10rpx 20rpx;
+}
+.inputWrap:nth-of-type(1){
+    margin-top: 50rpx;
+}
+.wrap{
+    margin:30rpx 100rpx;
+}
+.inputWrapNew{
+    padding: 10rpx 20rpx;
+    background: #fff;
+    display: inline-block;
+    width: 60%;
+}
+.yzm{
+    width: 30%;
+    float: right;
+    margin-top: 10rpx;
+}
+.inputWrap input{
+    width: 100%;
+}
+.forgetPassword{
+    float: right;
+    margin-right: 100rpx;
+    color: #aaa;
+}
+.login{
+    display: block;
+    margin:150rpx 25%;
+    width: 50%;
+    height: 70rpx;
+    line-height: 70rpx;
+}

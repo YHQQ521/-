@@ -1,0 +1,20 @@
+<!--pages/selectman/selectman.wxml-->
+<import src="../template/template.wxml" />
+<template is="module-header" data="{{...headerData}}"></template>
+<button class="addman weui-btn colorl" type="default">+ 添加人员</button>
+<!--孩子信息-->
+<text class="title colorh">孩子信息</text>
+<view class="wrap borderb" wx:for="{{childname}}" wx:key="">
+  <label class="checkbox">
+    <checkbox value="">{{item}}</checkbox>
+  </label>
+  <image class="fr" src="../../images/icon/arrowRight.png" mode="widthFix"></image>
+</view>
+<!--成人信息-->
+<text class="title colorh">成人信息</text>
+<view class="wrap borderb" wx:for="{{adultname}}" wx:key="">
+  <label class="checkbox">
+    <checkbox value="">{{item}}</checkbox>
+  </label>
+  <image class="fr" src="../../images/icon/arrowRight.png" mode="widthFix"></image>
+</view>

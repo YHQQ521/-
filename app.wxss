@@ -1,0 +1,81 @@
+/**app.wxss**/
+@import "style/weui.wxss";
+page{
+    background: #f0f0f0;
+    font-size: 14px;
+}
+/************************预定义样式***************************/
+/*字体大小*/
+.fontsize12{font-size: 12px}
+.fontsize14{font-size: 14px}
+.fontsize16{font-size: 16px}
+.fontsize18{font-size: 18px}
+.fontsize20{font-size: 20px}
+/*字体加粗*/
+.bold{font-weight: bold}
+/*字体颜色*/
+.colorh{color: #999}
+.colorl{color: #9ccc65}
+/*上外边距*/
+.mt10{margin-top: 10rpx;}
+.mt20{margin-top: 20rpx;}
+.mt30{margin-top: 30rpx;}
+.mt40{margin-top: 40rpx;}
+.mt50{margin-top: 50rpx;}
+.mt60{margin-top: 60rpx;}
+.mt70{margin-top: 70rpx;}
+.mt80{margin-top: 80rpx;}
+.mt90{margin-top: 90rpx;}
+.mt100{margin-top: 100rpx;}
+.mt110{margin-top: 110rpx;}
+.mt120{margin-top: 120rpx;}
+/*下外边距*/
+.mb10{margin-bottom: 10rpx;}
+.mb20{margin-bottom: 20rpx;}
+.mb30{margin-bottom: 30rpx;}
+.mb40{margin-bottom: 40rpx;}
+.mb50{margin-bottom: 50rpx;}
+.mb60{margin-bottom: 60rpx;}
+.mb70{margin-bottom: 70rpx;}
+.mb80{margin-bottom: 80rpx;}
+.mb90{margin-bottom: 90rpx;}
+.mb100{margin-bottom: 100rpx;}
+.mb110{margin-bottom: 110rpx;}
+.mb120{margin-bottom: 120rpx;}
+/*左外边距*/
+.ml10{margin-left: 10rpx;}
+.ml20{margin-left: 20rpx;}
+.ml30{margin-left: 30rpx;}
+.ml40{margin-left: 40rpx;}
+.ml50{margin-left: 50rpx;}
+.ml60{margin-left: 60rpx;}
+.ml70{margin-left: 70rpx;}
+.ml80{margin-left: 80rpx;}
+.ml90{margin-left: 90rpx;}
+.ml100{margin-left: 100rpx;}
+.ml110{margin-left: 110rpx;}
+.ml120{margin-left: 120rpx;}
+/*右外边距*/
+.mr10{margin-right: 10rpx;}
+.mr20{margin-right: 20rpx;}
+.mr30{margin-right: 30rpx;}
+.mr40{margin-right: 40rpx;}
+.mr50{margin-right: 50rpx;}
+.mr60{margin-right: 60rpx;}
+.mr70{margin-right: 70rpx;}
+.mr80{margin-right: 80rpx;}
+.mr90{margin-right: 90rpx;}
+.mr100{margin-right: 100rpx;}
+.mr110{margin-right: 110rpx;}
+.mr120{margin-right: 120rpx;}
+/*边框*/
+.border{border:1px solid #dbdbdb;}
+.bordert{border-top:1px solid #dbdbdb;}
+.borderb{border-bottom:1px solid #dbdbdb;}
+/*浮动*/
+.fl{float: left}
+.fr{float: right}
+/*行块级显示*/
+.block{display: block;}
+.inlineblock{display: inline-block}
+.inline{display: inline}

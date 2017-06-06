@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<import src="../template/template.wxml" />
+<!--头部-->
+<view class="header">
+  <view class="center">
+    <image src="../../images/icon/logo.png" mode="widthFix"></image>
+    <text>云领将来商城</text>
+  </view>
+</view>
+<!--轮播图-->
+<swiper class="carousel" indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="1000" circular="{{true}}">
+  <block wx:for="{{carouselimgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!--模块-->
+<view class="unit">
+  <view id="{{item.id}}" class="unit-item" wx:for="{{unit}}" wx:key="" bindtap="unitClick">
+    <image src="{{item.imgUrl}}" mode="widthFix"></image>
+    <text>{{item.text}}</text>
+  </view>
+  <view class="unit-item" bindtap="unitClick">
+    <image src="../../images/icon/mine.png" mode="widthFix"></image>
+    <text>我的</text>
+  </view>
+</view>
+<!--热门推荐-->
+<view class="hotRecomend">
+  <text>热门推荐</text>
+</view>
+<!--热门推荐具体课程-->
+<template is="module-course-list" data="{{hotCourse}}"></template>
+

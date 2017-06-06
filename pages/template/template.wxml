@@ -1,0 +1,33 @@
+<!--pages/template/template.wxml-->
+<!--头部模板-->
+<template name="module-header">
+    <view class="header">
+        <image class="return" src="../../images/icon/return.png" mode="widthFix" bindtap="backClick"></image>
+        <text class="center">{{title}}</text>
+        <text class="right" bindtap="homeClick">{{home}}</text>
+    </view>
+</template>
+<!--课程列表模板-->
+<template name="module-course-list">
+    <view class="hotCourseWrap">
+        <view id="{{item.id}}" class="hotCourse" wx:for="{{hotCourse}}" wx:key="" bindtap="commodityClick">
+            <image class="slImg" src="{{item.slImg}}"></image>
+            <view class="center">
+            <text>{{item.text}}</text>
+            <text class="price">￥{{item.price}}</text>
+            </view>
+            <view class="saled">
+            <text>已售 {{item.num}}</text>
+            <image src="../../images/icon/arrowRight.png" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+</template>
+<!--底部模板-->
+<template name="module-footer">    
+    <view class="footer" bindtap="applyClick">
+        <image src="{{image}}" mode="widthFix"></image>
+        <text>{{title}}</text>
+    </view>
+</template>
+

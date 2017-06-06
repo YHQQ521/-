@@ -1,0 +1,27 @@
+
+<!--pages/commodity/commodity.wxml-->
+<import src="../template/template.wxml" />
+<template is="module-header" data="{{...headerData}}" />
+
+<!--大图-->
+<view class="bigPicture">
+  <image src="../../images/photo/carousel1.jpg" mode="widthFix"></image>
+</view>
+<text class="title">{{courseTitle}}</text>
+<view class="courseWrap">
+  <text>￥{{coursePrice}}</text>
+  <text>已售 {{saleNum}}</text>
+</view>
+
+<!--文字介绍-->
+<view class="textInfo">
+  <text>{{textInfo}}</text>
+</view>
+
+<!--图片展示-->
+<view class="imageShow">
+  <image wx:for="{{imageShow}}" wx:key="" src="{{item}}" mode="widthFix"></image>
+</view>
+
+<!--底部-->
+<template is="module-footer" data="{{...footerData}}" />

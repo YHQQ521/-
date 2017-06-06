@@ -1,0 +1,42 @@
+
+<!--pages/specification/specification.wxml-->
+<import src="../template/template" />
+<template is="module-header" data="{{...headerData}}"></template>
+
+<!--课程规格-->
+<view class="wrap">
+
+  <!--校区-->
+  <text class="title">{{title}}</text>
+  <view class="specification">
+    <text class="name">校区</text>
+    <block wx:for="{{XS}}" wx:key="">
+      <text id="{{item.id}}" bindtap="selectedClick1" class="content {{select1==item.id?'selected':''}}" wx:key="">{{item.name}}</text>
+    </block>
+  </view>
+
+  <!--日期-->
+  <view class="specification">
+    <text class="name">日期</text>
+    <block wx:for="{{RQ}}" wx:key="">
+      <text id="{{item.id}}" bindtap="selectedClick2" class="content {{select2==item.id?'selected':''}}" wx:key="">{{item.date}}</text>
+    </block>
+  </view>
+
+  <!--时段-->
+  <view class="specification">
+    <text class="name">时段</text>
+    <block wx:for="{{SD}}" wx:key="">
+      <text id="{{item.id}}" bindtap="selectedClick3" class="content {{select3==item.id?'selected':''}}" wx:key="">{{item.time}}</text>
+    </block>
+  </view>
+</view>
+
+<!--价格-->
+<view class="price">
+  <text>价格</text>
+  <text>￥{{price}}</text>
+</view>
+
+<!--底部-->
+<view class="confine" bindtap="confine">确定</view>

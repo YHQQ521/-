@@ -1,0 +1,44 @@
+<!--pages/course/course.wxml-->  
+<import src="../template/template.wxml" />
+<!--头部-->
+<template is="module-header" data="{{...headerData}}">
+</template>
+<!--联动选择-->
+<view class="linkageWrap">
+    <view class="linkage">
+        <view bindtap="clicktitle1">
+            <text>{{class1}}</text>
+            <image src="{{arrow1?arrowDown:arrowUp}}" mode="widthFix"></image>
+        </view>
+        <view bindtap="clicktitle2">
+            <text>{{class2}}</text>
+            <image src="{{arrow2?arrowDown:arrowUp}}" mode="widthFix"></image>
+        </view>
+        <view bindtap="clicktitle3">
+            <text>{{class3}}</text>
+            <image src="{{arrow3?arrowDown:arrowUp}}" mode="widthFix"></image>
+        </view>
+    </view>
+    <!--下拉选择-->
+        <!--一级菜单下拉选择-->
+    <view class="select" hidden="{{hide1?true:false}}">
+        <view class="selectlist" hover-class="selecthover" wx:for="{{selectlist1}}" wx:key="" bindtap="clickValue1" data-content="{{item}}">{{item}}</view>
+    </view>
+        <!--二级菜单下拉选择-->
+    <view class="select" hidden="{{hide2?true:false}}">
+        <view class="selectlist" hover-class="selecthover" wx:for="{{selectlist2}}" wx:key="" bindtap="clickValue2" data-content="{{item}}">{{item}}</view>
+    </view>
+        <!--三级菜单下拉选择-->
+    <view class="select" hidden="{{hide3?true:false}}">
+        <view class="selectlist" hover-class="selecthover" wx:for="{{selectlist3}}" wx:key="" bindtap="clickValue3" data-content="{{item}}">{{item}}</view>
+    </view>
+</view>
+<!--课程列表-->
+<view wx:if="{{courseNum==0}}" class="soldOutInfo">
+    <text>本季已售完，敬请期待</text>
+</view>
+<block wx:if="{{courseNum!==0}}">
+    <template is="module-course-list" data="{{hotCourse}}"></template>
+</block>
+
+

@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/course/course",
+    "pages/commodity/commodity",
+    "pages/specification/specification",
+    "pages/fillorder/fillorder",
+    "pages/confirmorder/confirmorder",
+    "pages/payorder/payorder",
+    "pages/cashpay/cashpay",
+    "pages/orderdetail/orderdetail",
+    "pages/selectman/selectman",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/protocol/protocol",
+    "pages/logs/logs",
+    "pages/template/template"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云领商城",
+    "navigationBarTextStyle":"black"
+  }
+}

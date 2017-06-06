@@ -1,0 +1,26 @@
+/* pages/payorder/payorder.wxss */
+@import "../template/template.wxss";
+.center{margin-left: -68rpx;}
+.wrap1{margin:130rpx 30rpx 0 30rpx;}
+.wrap2{margin:0 30rp 120rpx 30rpx;}
+.wrap1 .productInfo,.wrap2 .productInfo{
+    margin: 0 20rpx;
+    padding: 20rpx 30rpx;
+    background: #fff;
+    overflow: hidden;
+}
+.wrap1 .productInfo:nth-last-of-type(1),.wrap2 .productInfo:nth-last-of-type(1){border: none;}
+.wrap1 .productInfo:nth-last-of-type(1) text:nth-last-of-type(1){
+    color: #9ccc65;
+    font-weight: bold;
+} 
+.title{
+    margin: 30rpx;
+    padding: 0 20rpx;
+}
+.wrap2 .payimage{
+    width: 50rpx;
+    margin-right: 20rpx;
+    vertical-align: middle;
+    margin-top: -5rpx;
+}

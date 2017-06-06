@@ -1,0 +1,45 @@
+/* pages/cashpay/cashpay.wxss */
+@import "../template/template.wxss";
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background:#f9f9f9;
+  z-index: 1;
+  text-align: center;
+  line-height: 100rpx;
+}
+.successinfo{
+  padding: 30rpx;
+  background: #FFAA0D;
+  text-align: center;
+  color: #fff;
+}
+.wrap{
+  margin: 50rpx 30rpx;
+  padding: 60rpx 0;
+  background: #fff;
+  text-align: center;
+}
+.wrap image{
+  display: block;
+  margin: 40rpx auto;
+  width: 70rpx;
+}
+.wrap text{
+  font-size: 18px;
+}
+.btnwrap{
+  margin:50rpx 30rpx;
+  text-align: center;
+}
+.btnwrap button{
+  display: inline-block;
+  width: 40%;
+  margin: 60rpx 5%;
+  background: #AACC03;
+  color: #fff;
+  line-height: 2.2;
+}

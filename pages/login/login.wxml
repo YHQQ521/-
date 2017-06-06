@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<import src="../template/template.wxml" />
+<template is="module-header" data="{{...headerData}}"></template>
+<text class="title">云领将来</text>
+<!--表单提交-->
+<form bindsubmit="formsubmit" bindreset="formreset">
+    <view class="inputWrap">
+        <input name="input" type="text" placeholder="手机号/账号" />
+    </view>
+    <view class="inputWrap">
+        <input name="input" type="text" password placeholder="密码" />
+    </view>
+    <view class="wrap">
+        <view class="inputWrapNew">
+            <input name="input" type="text" password placeholder="验证码" />
+        </view>
+        <image class="yzm" src="../../images/icon/yzm.png" mode="widthFix"></image>
+    </view>
+    <text class="forgetPassword">忘记密码？</text>
+    <button class="login" form-type="submit" type="primary">登录</button>
+</form>

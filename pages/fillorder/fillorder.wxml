@@ -1,0 +1,52 @@
+<!--pages/fillorder/fillorder.wxml-->
+<import src="../template/template.wxml" />
+<template is="module-header" data="{{...headerData}}" />
+<view class="title mt100 bold fontsize18">{{title}}</view>
+<!--商品信息-->
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">规格</text>
+    <text class="fr">{{time}}</text>
+</view>
+<view class="productInfo fontsize16">
+    <text class="fl colorh">总价</text>
+    <text class="fr">￥{{price}}</text>
+</view>
+<!--人员信息-->
+<view class="title colorh">
+    <text>人员信息</text>
+    <button class="weiui-btn fr addman" type="primary" bindtap="addman">+ 添加人员</button>
+</view>
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">孩子</text>
+    <view class="fr">
+        <text>{{child}}</text>
+        <image class="arrowRight" src="../../images/icon/arrowRight.png" mode="widthFix"></image>
+    </view>
+</view>
+<!--联系人信息-->
+<view class="title colorh">
+    <text>联系人信息</text>
+</view>
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">注册手机号</text>
+    <text class="fr">{{phoneNum}}</text>
+</view>
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">其他手机号</text>
+    <input class="input border fr" type="number" placeholder="请输入其他手机号" />
+</view>
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">联系地址</text>
+    <input class="input border fr" type="number" placeholder="请输入联系地址" />
+</view>
+<view class="productInfo fontsize16 borderb">
+    <text class="fl colorh">联系微信</text>
+    <input class="input border fr" type="number" placeholder="请输入联系微信" />
+</view>
+<view class="protocol mb120 fontsize12" bindtap="choose">
+    <icon class="choose mr10" type="{{choose}}" size="20"></icon>
+    <text>我已阅读并同意</text>
+    <navigator class="bmxy inlineblock" url="url">报名协议               </navigator>
+</view>
+<!--底部-->
+<template is="module-footer" data="{{...footerData}}" />

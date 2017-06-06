@@ -1,0 +1,62 @@
+/* pages/course/course.wxss */
+@import "../template/template.wxss";
+/* 联动选择 */
+.linkageWrap{
+    position: relative;
+}
+.linkageWrap .linkage{
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 100rpx;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    background: #fff;
+    font-size: 14px;
+}
+.linkageWrap .linkage view{
+    width: 33.33333333333%;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+.linkageWrap .linkage view:nth-last-of-type(1){
+    border: none;
+}
+.linkageWrap .linkage view image{
+    width: 40rpx;
+    vertical-align: middle;
+}
+/* 下拉选择 */
+.linkageWrap .select{
+    /*display: none;*/
+    position: absolute;
+    top: 62rpx;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    font-size: 12px;
+}
+.linkageWrap .select .selectlist{
+    padding: 10rpx 50rpx;
+    border-bottom: 1px solid #eee;
+}
+.linkageWrap .select .selectlist:nth-last-of-type(1){
+    border: none;
+}
+.linkageWrap .select .selecthover{
+    background: #eee;
+}
+.linkageWrap .select .selectlist .iconRight{
+    float: right;
+    margin-right: 50rpx;
+}
+/* 课程列表 */
+.soldOutInfo{
+    text-align: center;
+    margin-top: 200rpx;
+    color: #bbb;
+    font-size: 12px;
+}
+.hotCourseWrap{
+  margin: 20rpx 0;
+}

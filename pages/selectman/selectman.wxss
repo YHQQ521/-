@@ -1,0 +1,19 @@
+/* pages/selectman/selectman.wxss */
+@import "../template/template.wxss";
+.addman{
+    margin: 120rpx 30rpx 0 30rpx;
+}
+.title{
+    display: block;
+    margin: 10rpx;
+    padding: 20rpx 10rpx;
+}
+.wrap{
+    padding:30rpx;
+    background: #fff;
+}
+.wrap:nth-last-of-type(1){border:none;}
+.wrap image{
+    width: 50rpx;
+    vertical-align: middle;
+}

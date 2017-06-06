@@ -1,0 +1,84 @@
+// pages/specification/specification.js
+Page({
+  data:{
+    headerData:{
+      title:'选择规格'
+    },
+    title:'亲子启蒙课Let`s Go Go Go',
+    XS:[{
+      id:'1',
+      name:'浦东校区',
+    },{
+      id:'2',
+      name:'闵行校区',
+    },{
+      id:'3',
+      name:'静安校区',
+    }],
+    RQ:[{
+      id:'1',
+      date:'12月17日'
+    },{
+      id:'2',
+      date:'12月17日'
+    },{
+      id:'3',
+      date:'12月17日'
+    }],
+    SD:[{
+      id:'1',
+      time:'8:30'
+    },{
+      id:'2',
+      time:'8:30'
+    },{
+      id:'3',
+      time:'8:30'
+    }],
+    select1:'1',
+    select2:'1',
+    select3:'1',
+    price:'1200.00'
+  },
+  //事件函数
+  backClick:function(){
+    wx.navigateBack({
+      delta:1
+    })
+  },
+  selectedClick1:function(e){
+    this.setData({
+      select1:e.currentTarget.id
+    })
+  },
+  selectedClick2:function(e){
+    this.setData({
+      select2:e.currentTarget.id
+    })
+  },
+  selectedClick3:function(e){
+    this.setData({
+      select3:e.currentTarget.id
+    })
+  },
+  confine:function(){
+    wx.navigateTo({
+      url:'../fillorder/fillorder'
+    })
+  },
+  onLoad:function(options){
+    // 页面初始化 options为页面跳转所带来的参数
+  },
+  onReady:function(){
+    // 页面渲染完成
+  },
+  onShow:function(){
+    // 页面显示
+  },
+  onHide:function(){
+    // 页面隐藏
+  },
+  onUnload:function(){
+    // 页面关闭
+  }
+})

@@ -1,0 +1,101 @@
+/* pages/template/template.wxss */
+/*头部模板样式开始*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background:#f9f9f9;
+  z-index: 1;
+  text-align: center;
+  line-height: 100rpx;
+}
+.header .return{
+  float: left;
+  width: 40rpx;
+  margin-top:27rpx;
+  margin-left: 30rpx;
+}
+.header .center{
+  font-size: 18px;
+  font-weight: bold;
+}
+.header .right{
+  float: right;
+  margin-right: 30rpx;
+  color: #AACC03;
+  font-size: 12px;
+  font-weight: bold;
+}
+/*头部模板样式结束*/
+
+/* 课程列表模板样式 */
+.hotCourse{
+  padding:20rpx 30rpx; 
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  background: rgba(255,255,255,0.8);
+}
+.hotCourse:nth-last-of-type(1){
+  border: none;
+}
+.hotCourse .slImg{
+  float: left;
+  width: 200rpx;
+  height: 150rpx;
+  margin-top: 12rpx;
+}
+.hotCourse .center{
+  width: 160rpx;
+  margin: 28rpx 20rpx;
+}
+.hotCourse .center text{
+  display: block;
+}
+.hotCourse .center .price{
+  margin-top: 30rpx;
+  font-weight: bold;
+  color: #76a22d;
+}
+.hotCourse .saled{
+  margin: 100rpx 0 0 100rpx;
+  color: #aaa;
+}
+.hotCourse .saled text{
+  display: inline-block;
+  width: 140rpx;
+  text-align: right;
+}
+.hotCourse .saled image{
+  width: 40rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-top: -5rpx;
+}
+/* 课程列表模板样式结束 */
+
+/* 底部模板样式开始 */
+.footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    z-index: 1;
+}
+.footer image{
+    width: 50rpx;
+    vertical-align: middle;
+    margin-top:-10rpx;
+    margin-right: 10rpx;
+}
+.footer text{
+    font-size: 18px;
+    font-weight: bold;
+}
+/* 底部模板样式结束 */

@@ -1,0 +1,17 @@
+<!--pages/cashpay/cashpay.wxml-->
+<!--头部-->
+<view class="header">
+    <text class="center">下单成功</text>
+</view>
+<!--提示-->
+<view class="successinfo mt100 bold">{{successinfo}}</view>
+<!--下单成功-->
+<view class="wrap">
+    <image src="../../images/icon/success.png" mode="widthFix"></image>
+    <text>下单成功!</text>
+</view>
+<!--按钮-->
+<view class="btnwrap">
+    <button bindtap="vieworder">查看订单</button>
+    <button bindtap="continuebuy">继续购买</button>
+</view>

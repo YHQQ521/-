@@ -1,0 +1,70 @@
+/* pages/specification/specification.wxss */
+@import "../template/template.wxss";
+.center{
+    margin-left: -68rpx;
+}
+.wrap{
+    margin: 120rpx 0 20rpx 0;
+    padding: 10rpx 20rpx;
+    background: #fff;
+}
+.wrap .title{
+    display: block;
+    margin: 0 20rpx;
+    padding: 30rpx 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.wrap .specification{
+    margin:20rpx;
+}
+.wrap .specification .name{
+    display: block;
+    margin: 20rpx 0;
+    color: #999;
+}
+.content{
+    display: inline-block;
+    padding: 5rpx 20rpx;
+    margin: 5rpx 10rpx;
+    border: 1px solid #dbdbdb;
+    max-width: 93%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.selected{
+    background: #9CCC65;
+    color: #fff;
+    border: 1px solid #9CCC65;
+}
+.price{
+    padding: 20rpx 40rpx;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 100rpx;
+}
+.price text:nth-of-type(1){
+    float: left;
+}
+.price text:nth-of-type(2){
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9CCC65;
+}
+.confine{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background:#9CCC65;
+}
